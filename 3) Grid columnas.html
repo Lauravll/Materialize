@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           
+</head>
+
+<body>
+
+    <!--Contenido centrado-->
+    <div class="container">
+    
+       <!-- Sistema de Columnas-->
+        <div class="row">
+            <!--Indicamos que usamos el sistema de columnas, en small/medium e indico la cantidad-->
+            <div class="col s6 m3 yellow">6</div>
+            <div class="col s6 m9 green">6</div>
+            <div class="col s12 pink">12</div>
+        </div>
+          
+        <div class="row">
+            <div class="col s12 m3 blue">3</div>
+            <div class="col s12 m6 red">6</div>
+            <div class="col s12 m3 blue">3</div>
+        </div>
+
+        <!-- Tambien tenemos puntos de quiebre dependiendo el tamaño de la pantalla-->
+        <!-- Como en mi caso es de 400x570x uso -s-->
+
+        <!-- Tipografía-->
+        <blockquote>
+                This is an example quotation that uses the blockquote tag.
+        </blockquote>
+    
+        <p class="flow-text">I am Flow Text</p>
+
+        <p>I am Flow Text</p>
+    
+        <!-- Sombras, se pueden agregar a cualquier cosa-->
+
+        <div class="col s12 m2">
+            <p class="z-depth-5">z-depth-5</p>
+        </div>
+
+        <h3 class="z-depth-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
+        <h3 class="z-depth-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
+        
+        <!-- Section-->
+        <h3 class="z-depth-5 section">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+  
+        <!-- Imagenes-->
+        <!-- Sistema de Columnas-->
+        <div class="row">
+            <!-- No se respetan las columnas y lo manejamos con responsive-img-->
+            <div class="col s3">
+                <img class="responsive-img" src="https://images.pexels.com/photos/861443/pexels-photo-861443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            </div>
+
+            <div class="col s6">
+                    <img class="responsive-img" src="https://images.pexels.com/photos/861443/pexels-photo-861443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            </div>
+            <!-- En forma de circulo-->
+            <div class="col s3">
+                    <img class="circle responsive-img" src="https://images.pexels.com/photos/861443/pexels-photo-861443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            </div>
+        </div>
+
+        <!--Video-->
+        <div class="row">
+            <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+   
+
+</body>
+</html>

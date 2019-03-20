@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           
+</head>
+
+<body>
+
+    <nav class="nav-wrapper">
+        <!-- Coloco espacio para que el logo no quede tan pegado-->
+       
+      
+        <div class="row">
+                
+            
+            <div class="col s12">
+                
+                <!--Logo con imagen-->
+                <a href="https://codepen.io/collection/nbBqgY" target="_blank" class="brand-logo center2"><img src="images/logo3.png" class="center" height="18px" width="25px" class="responsive-img"/>Prueba</a>
+
+
+                <a href="#" data-target="menu-responsive" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+				<a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons">format_indent_increase</i></a>
+                
+                
+                <!--Desaparecen cuandola pantalla esta en el medio-->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="" class="dropdown-trigger waves-effect waves-block waves-light " data-target="notifications-dropdown">
+                            <i class="material-icons">notifications_none
+                                <small class="notification-badge">5</small>
+                            </i>
+                        </a>
+                    </li>
+
+                    <li><a class="dropdown-trigger" href="#!" data-target="profile-dropdown" >Docente<i class="material-icons right">arrow_drop_down</i></a></li>
+  
+
+            
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- notifications-dropdown -->
+    <ul id="notifications-dropdown" class="dropdown-content" style="width: 800px !important">
+            <li>
+              <h6>Notificaciones
+                <span class="new badge">5</span>
+              </h6>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="form-layouts.html#!" class="grey-text.text-darken-2">
+                <span class="material-icons circle cyan chica">add_shopping_cart</span> Nuevo trabajo practico!</a>
+              
+            </li>
+            <li>
+              <a href="form-layouts.html#!" class="grey-text.text-darken-2">
+                <span class="material-icons circle red small">stars</span> Trabajo completo</a>
+              
+            </li>
+            <li>
+              <a href="form-layouts.html#!" class="grey-text.text-darken-2">
+                <span class="material-icons circle amber chica">trending_up</span> Reporte del mes generado</a>
+              
+            </li>
+          </ul>
+
+
+    <!-- profile-dropdown -->
+    <ul id="profile-dropdown" class="dropdown-content">
+            <li>
+              <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">face</i> Perfil</a>
+            </li>
+            <li>
+              <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">settings</i> Ajustes</a>
+            </li>
+            <li>
+              <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">live_help</i> Ayuda</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">lock_outline</i> Bloquear</a>
+            </li>
+            <li>
+              <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">keyboard_tab</i> Salir</a>
+            </li>
+          </ul>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+   
+    <!-- Inicializamos el Javascript (todas sus funciones)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){ 
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown({
+                coverTrigger: false,
+                hover: true, 
+                constrainWidth: false 
+            });
+        });
+    </script>
+
+</body>
+</html>

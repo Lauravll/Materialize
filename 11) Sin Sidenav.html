@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!--Pega el navbar arriba siempre-->
+    <div class="navbar-fixed">
+
+        <!-- Para poder hacer los alineamientos, nav-wrapper tiene sus propios estilos-->
+        <nav class="granate">
+
+            <!--Esta vez es un div-->
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+
+                        <!--Logo con imagen-->
+                        <a  target="_blank" class="brand-logo center2"><img src="images/logo3.png" class="materialboxed " height="18px" width="25px" data-caption="Este es el logo de la Universidad Nacional de Lanus"/>Prueba</a>
+                        
+                        <!--Menu responsive-->
+                        <a href="#" data-target="menu-responsive" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+                        <a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons">format_indent_increase</i></a>
+
+                        <!--Desaparecen cuandola pantalla esta en el medio-->
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li>
+                                <!--data-target como el menu responsive, ademas va un id, afuera va a estar e ul con el id-->
+                                <a href="" class="dropdown-trigger waves-effect waves-block waves-light " data-target="notifications-dropdown">
+                                    <i class="material-icons">notifications_none
+                                      <small class="notification-badge">5</small>
+                                    </i>
+                                </a>
+                            </li>
+
+                            <li><a class="dropdown-trigger" href="#!" data-target="profile-dropdown">Docente<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--menu responsive-->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+              
+    </ul>
+
+    <!-- notifications-dropdown -->
+    <ul id="notifications-dropdown" class="dropdown-content" style="width: 800px !important">
+        <li>
+            <h6>Notificaciones
+                <span class="new badge">5</span>
+              </h6>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="form-layouts.html#!" class="grey-text text-darken-1">
+                <span class="material-icons circle cyan lighten-4 small">add_shopping_cart</span> Nuevo trabajo practico!</a>
+
+        </li>
+        <li>
+            <a href="form-layouts.html#!" class="grey-text text-darken-1">
+                <span class="material-icons circle purple lighten-4 small">stars</span> Trabajo completo</a>
+
+        </li>
+        <li>
+            <a href="form-layouts.html#!" class="grey-text text-darken-1">
+                <span class="material-icons circle amber lighten-4 small">trending_up</span> Reporte del mes generado</a>
+
+        </li>
+
+    </ul>
+
+    <!-- profile-dropdown -->
+    <ul id="profile-dropdown" class="dropdown-content">
+        <li>
+            <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">face</i> Perfil</a>
+        </li>
+        <li>
+            <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">settings</i> Ajustes</a>
+        </li>
+        <li>
+            <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">live_help</i> Ayuda</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">lock_outline</i> Bloquear</a>
+        </li>
+        <li>
+            <a href="form-layouts.html#" class="grey-text text-darken-1">
+                <i class="material-icons">keyboard_tab</i> Salir</a>
+        </li>
+    </ul>
+
+    <div class="container section">
+        <div class="row">
+            
+
+         
+        </div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <div class="slider">
+                    <ul class="slides">
+                            <li>
+                                    <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                                    <div class="caption center-align">
+                                      <h3>This is our big Tagline!</h3>
+                                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                                    <div class="caption left-align">
+                                      <h3>Left Aligned Caption</h3>
+                                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                    </div>
+                                  </li>
+                                  <li>
+                                        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                                        <div class="caption right-align">
+                                          <h3>Right Aligned Caption</h3>
+                                          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                        </div>
+                                      </li>
+                    </ul>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <!--Puede ir posicionado en cualquier parte del html, puse toolbar para que se convierta en toolbar-->
+    <div class="fixed-action-btn toolbar">
+        <!--ancla-->
+        <a class="btn-floating btn-large granate">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <!--Cada li tiene un ancla con la clase floating y dentro de la ancla hay un icono-->
+            <li><a class="btn-floating "><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating "><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating "><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+
+    <!-- Inicializamos el Javascript (todas sus funciones)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+
+    <!--Dropdown abajo de boton-->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown({
+                coverTrigger: false,
+                hover: true,
+                constrainWidth: false
+            });
+        });
+    </script>
+
+    <!--
+    <script>
+    $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+    });
+    </script>-->
+
+   <!--Floatting Button-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {hoverEnabled: false, toolbarEnabled: true});
+        });
+    </script>
+
+    <!--Carousel-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            fullWidth: true,
+            duration: 500,
+            indicators: true
+            });
+    });
+    </script>
+
+    <!--Slider-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+        });
+    </script>
+
+    <!--Imagen agrandada-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+    </script>
+</body>
+
+</html>
